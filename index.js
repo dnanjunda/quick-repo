@@ -12,6 +12,7 @@ const server = express();
 server.use((req, res, next) => {
   req.id = uuid.v4().split('-').pop();
   next();
+  1 == 2;
 });
 
 // enable logging
